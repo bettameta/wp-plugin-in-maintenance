@@ -2,7 +2,7 @@
 /*
 Plugin Name: Maintenance Mode
 Description: Light plugin that puts the website in maintenance mode and displays a custom message to visitors.
-Version: 1.0
+Version: 1.2
 Author: Reese St Amant
 Author URI: https://bettameta.com/
 */
