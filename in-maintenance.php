@@ -2,7 +2,7 @@
 /*
 Plugin Name: Maintenance Mode
 Description: Light plugin that puts the website in maintenance mode and displays a custom message to visitors.
-Version: 1.2
+Version: 1.3
 Author: Reese St Amant
 Author URI: https://bettameta.com/
 */
@@ -10,7 +10,7 @@ Author URI: https://bettameta.com/
 // Add a maintenance mode page
 function maintenance_mode() {
     if ( ! current_user_can( 'manage_options' ) ) {
-        wp_die( 'Sorry this site is under maintenance. Please check back later!' );
+        wp_die( '<h1>Maintenance Mode</h1><p>We are just cleaning up some files at the moment. Please check back later!</p>' );
     }
 }
 add_action( 'wp', 'maintenance_mode' );
