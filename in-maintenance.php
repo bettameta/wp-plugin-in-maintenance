@@ -10,7 +10,7 @@ Author URI: https://bettameta.com/
 // Add a maintenance mode page
 function maintenance_mode() {
     if ( ! current_user_can( 'manage_options' ) ) {
-        wp_die( 'Sorry this site is under maintenance. BRB!' );
+        wp_die( 'Sorry this site is under maintenance. Please check back later!' );
     }
 }
 add_action( 'wp', 'maintenance_mode' );
